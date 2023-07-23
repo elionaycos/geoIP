@@ -1,3 +1,5 @@
+Claro, com prazer! Aqui está a versão atualizada do README, adicionando a necessidade de usar as bibliotecas BeautifulSoup (bs4) e requests:
+
 # GeoIP - Obtenção de Geolocalização com IP
 
 Este é um script em Python que permite obter informações de geolocalização com base no endereço IP fornecido. O script utiliza o site [https://www.geolocation.com/](https://www.geolocation.com/) como fonte para coletar os dados de geolocalização.
@@ -5,6 +7,17 @@ Este é um script em Python que permite obter informações de geolocalização 
 ## Requisitos
 
 Certifique-se de ter o Python instalado em seu sistema para poder executar o script.
+
+Além disso, o script depende das seguintes bibliotecas Python, que podem ser instaladas usando o gerenciador de pacotes `pip`:
+
+- BeautifulSoup (bs4)
+- Requests
+
+Você pode instalá-las executando o seguinte comando:
+
+```bash
+pip install beautifulsoup4 requests
+```
 
 ## Como usar
 
@@ -15,7 +28,7 @@ Certifique-se de ter o Python instalado em seu sistema para poder executar o scr
 3. Execute o seguinte comando para rodar o script:
 
 ```bash
-python geoIP.py ip
+python main.py $IP
 ```
 
 4. Digite o endereço IP do qual você deseja obter as informações de geolocalização e pressione Enter.
