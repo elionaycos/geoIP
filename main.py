@@ -39,7 +39,10 @@ class GeoIP:
         print("\033[94m [ok] Google Map: {} < \033[00m".format(self.map_host))
 
 
-ip = "170.231.133.46"
+try:
+    ip = argv[1]
 
-geoIP = GeoIP(ip)
-geoIP.getData()
+    geoIP = GeoIP(ip)
+    geoIP.getData()
+except:
+    print("python3 main.py $IP")
